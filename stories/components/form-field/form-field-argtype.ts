@@ -2,15 +2,12 @@ export const formFieldArgtypes = {
   appearance: {
     description: 'The form field appearance style',
     control: 'select',
-    defaultValue: 'standard',
+    defaultValue: 'fill',
     table: {
-      defaultValue: { summary: 'standard' },
+      defaultValue: {summary: 'fill'},
     },
     options: [
-      'legacy',
-      'standard',
-      'fill',
-      'outline',
+      'fill', 'outline'
     ]
   },
   color: {
@@ -18,7 +15,7 @@ export const formFieldArgtypes = {
     control: 'select',
     defaultValue: 'primary',
     table: {
-      defaultValue: { summary: 'primary' },
+      defaultValue: {summary: 'primary'},
     },
     options: [
       'primary',
@@ -29,13 +26,12 @@ export const formFieldArgtypes = {
   floatLabel: {
     description: 'Whether the label should always float, never float or float as the user types',
     control: 'select',
-    defaultValue: 'primary',
+    defaultValue: 'auto',
     table: {
-      defaultValue: { summary: 'primary' },
+      defaultValue: {summary: 'auto'},
     },
     options: [
       'always',
-      'never',
       'auto',
     ]
   },
@@ -43,8 +39,8 @@ export const formFieldArgtypes = {
     description: 'Whether the required marker should be hidden',
     defaultValue: false,
     table: {
-      type: { summary: 'boolean' },
-      defaultValue: { summary: false },
+      type: {summary: 'boolean'},
+      defaultValue: {summary: false},
     },
     control: {
       type: 'boolean'
@@ -54,8 +50,8 @@ export const formFieldArgtypes = {
     description: 'Text for the form field hint',
     defaultValue: '',
     table: {
-      type: { summary: 'text' },
-      defaultValue: { summary: '' },
+      type: {summary: 'text'},
+      defaultValue: {summary: ''},
     },
     control: {
       type: 'text'
@@ -66,7 +62,7 @@ export const formFieldArgtypes = {
     control: 'select',
     defaultValue: 'start',
     table: {
-      defaultValue: { summary: 'start' },
+      defaultValue: {summary: 'start'},
     },
     options: [
       'start',

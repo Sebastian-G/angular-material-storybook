@@ -108,6 +108,11 @@
           "builder": "@storybook/angular:start-storybook",
           "options": {
             "browserTarget": "showcase:build",
+            "compodoc": false,
+            "styles": [
+              "projects/showcase/src/styles.scss",
+              ".storybook/custom-styles.scss"
+            ],
             "port": 6006
           }
         },

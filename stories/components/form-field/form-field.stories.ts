@@ -50,7 +50,7 @@ export const AAWithBasicUsage: StoryObj = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     await userEvent.type(canvas.getByLabelText('Password'), 'email@provider.com');
-    await expect(canvas.getByLabelText('Password')).toHaveValue('email@provider.com');
+    await expect(canvas.getByLabelText('Password')).toEqual('email@provider.com');
   },
   name: 'basic usage',
   parameters: {
